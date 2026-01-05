@@ -12,10 +12,10 @@
 
 :root {
   /* colors */
-  --background-color: tan;
+  --background-color: cyan;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: magenta;
   --link-color: #3b63fb;
   --link-hover-color: red;
 
@@ -254,4 +254,10 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .separate-section-container {
+    background-color: gray;
+    width: 100%;
+    padding: 40px 0;
 }
