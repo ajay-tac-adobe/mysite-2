@@ -227,6 +227,16 @@ main img {
   width: 100%;
 }
 
+.icon-custom {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url('../icons/search.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* sections */
 main > .section {
   margin: 40px 0;

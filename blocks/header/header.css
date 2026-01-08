@@ -270,3 +270,46 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+/* breadcrumbs */
+header .breadcrumbs {
+  display: block;
+  margin: auto;
+  max-width: 1248px;
+  height: var(--breadcrumbs-height);
+  padding: 0 24px;
+  font-size: var(--body-font-size-xs);
+  overflow: scroll;
+}
+
+header .breadcrumbs ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 1ch;
+  white-space: nowrap;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header .breadcrumbs li {
+  padding: 0;
+  color: var(--dark-color);
+}
+
+header .breadcrumbs li:not(:last-child)::after {
+  content: '/';
+  padding-left: 1ch;
+}
+
+header .breadcrumbs li[aria-current] {
+  color: var(--text-color);
+}
+
+@media (width >= 900px) {
+  header .breadcrumbs {
+    max-width: 1264px;
+    padding: 0 32px;
+  }
+}
